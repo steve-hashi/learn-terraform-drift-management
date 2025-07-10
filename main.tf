@@ -55,6 +55,7 @@ resource "aws_instance" "example" {
   }
 }
 
+# Only SSH for now
 resource "aws_security_group" "sg_ssh" {
   name = "sg_ssh"
   ingress {
